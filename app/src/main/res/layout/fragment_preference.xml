@@ -1,0 +1,266 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your preference"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Grid Layout for Preferences -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <!-- First Preference -->
+            <FrameLayout
+                android:id="@+id/fl_first"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/hibur"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:text="Tempat Hiburan"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:id="@+id/fl_first_checked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="#BF000000">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_circle"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!-- Second Preference -->
+            <FrameLayout
+                android:id="@+id/fl_second"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/budaya"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:text="Budaya"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:id="@+id/fl_second_checked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="#BF000000">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_circle"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!-- Third Preference -->
+            <FrameLayout
+                android:id="@+id/fl_third"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cagar"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:text="Cagar Alam"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:id="@+id/fl_third_checked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="#BF000000">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_circle"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!-- Fourth Preference -->
+            <FrameLayout
+                android:id="@+id/fl_fourth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/taman"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:text="Taman"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:id="@+id/fl_fourth_checked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="#BF000000">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_circle"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!-- Fifth Preference -->
+            <FrameLayout
+                android:id="@+id/fl_fifth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ibadah"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#80000000"
+                    android:text="Tempat Ibadah"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:gravity="center" />
+
+                <FrameLayout
+                    android:id="@+id/fl_fifth_checked"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="#BF000000">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check_circle"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </GridLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="70dp"
+                android:backgroundTint="#F2EBD8"
+                android:text="Skip"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

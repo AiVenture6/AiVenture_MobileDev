@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. final gasee-->
+    <style name="Base.Theme.AIVenture" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/taledark</item>
+        <item name="colorSecondaryContainer">@color/tale</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="colorOnBackground">@color/black</item>
+    </style>
+
+    <style name="Theme.AIVenture" parent="Base.Theme.AIVenture" />
+</resources>

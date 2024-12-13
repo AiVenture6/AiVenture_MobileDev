@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/category"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:checkable="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginTop="8dp"
+    android:text="Budaya"
+    android:textColor="@color/white"
+    android:checked="false"
+    app:chipBackgroundColor="@color/chip_background_color"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvPlace" />

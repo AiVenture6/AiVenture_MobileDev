@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_camera"
+        android:icon="@drawable/outline_camera_alt_24"
+        android:title="Camera" />
+    <item
+        android:id="@+id/nav_category"
+        android:icon="@drawable/cate"
+        android:title="Category" />
+    <item
+        android:id="@+id/nav_booking"
+        android:icon="@drawable/outline_article_24"
+        android:title="Pemesanan" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profil"
+        android:title="Profil" />
+</menu>

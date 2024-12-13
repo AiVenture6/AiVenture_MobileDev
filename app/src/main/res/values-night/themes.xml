@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AIVenture" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/greenwitchdark</item>
+        <item name="colorSecondaryContainer">@color/greenwitch</item>
+        <item name="backgroundColor">@color/black</item>
+        <item name="colorOnBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.AIVenture" parent="Base.Theme.AIVenture" />
+</resources>

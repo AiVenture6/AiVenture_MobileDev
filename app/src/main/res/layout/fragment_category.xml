@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvYourLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/black"
+        android:text="Your Location"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivLocation"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintTop_toBottomOf="@id/tvYourLocation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="4dp"
+        android:text="Semarang, Indonesia"
+        app:layout_constraintStart_toEndOf="@id/ivLocation"
+        app:layout_constraintTop_toTopOf="@id/ivLocation"
+        app:layout_constraintBottom_toBottomOf="@id/ivLocation" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivArrow"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/ic_keyboard_down"
+        app:layout_constraintTop_toTopOf="@id/tvLocation"
+        app:layout_constraintBottom_toBottomOf="@id/tvLocation"
+        app:layout_constraintStart_toEndOf="@id/tvLocation" />
+
+    <HorizontalScrollView
+        android:id="@+id/filterScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ivLocation"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnJakarta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jakarta"
+                android:backgroundTint="#CCCCCC"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnBandung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bandung"
+                android:backgroundTint="#CCCCCC"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnYogyakarta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yogyakarta"
+                android:backgroundTint="#CCCCCC"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnSemarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semarang"
+                android:backgroundTint="#CCCCCC"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnSurabaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surabaya"
+                android:backgroundTint="#CCCCCC"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/filterScrollView"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

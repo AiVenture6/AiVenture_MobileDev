@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/indicator_custom.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="#000000" /> <!-- Black color for selected -->
+            <size android:width="10dp" android:height="10dp"/>
+        </shape>
+    </item>
+
+    <!-- Unselected state (half alpha black) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#80000000" /> <!-- Black with 50% alpha -->
+            <size android:width="10dp" android:height="10dp"/>
+        </shape>
+    </item>
+</selector>
