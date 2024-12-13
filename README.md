@@ -1,1 +1,2 @@
-# mobiledev
+# AI-Venture Mobile Development
+The AI-Venture mobile app is your cheerful travel buddy, ready to make every trip special and hassle-free! With secure Google Login and OTP Verification, getting started is as easy as a smile. Discover delightful, AI-crafted recommendations that match your preferences, stay on top of your plans with an itinerary manager, and book tickets effortlessly using our smooth Room-powered system. You’ll even get friendly push notifications to keep you updated! Need a little guidance? Our adorable AI-Mate is here to help every step of the way. Lovingly crafted by the Mobile Development (MD), Cloud Computing (CC), and Machine Learning (ML) teams, AI-Venture is designed to bring joy and ease to your travel adventures. 💕✈️
